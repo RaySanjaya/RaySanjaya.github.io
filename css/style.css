@@ -2756,18 +2756,30 @@ h6 {
     .personal_text .personal_social li:last-child {
       margin-right: 0px; }
     .personal_text .personal_social li a {
-      line-height: 40px;
-      width: 40px;
-      background: #e8e8e8;
+      line-height: 30px;
+      width: 30px;
+      /* background: #e8e8e8; */
       border-radius: 5px;
       display: inline-block;
       text-align: center;
       color: #fff;
-      font-size: 16px; }
+      font-size: 25px; }
+    .personal_text .personal_social li a.instagram {
+      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    }
+    .personal_text .personal_social li a.facebook {
+      background: #3b5998;
+    }
+    .personal_text .personal_social li a.github {
+      background: #000000;
+    }
+    .personal_text .personal_social li a.linkedin {
+      background: #007bb6;
+    }
     .personal_text .personal_social li:hover a {
-      background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-      background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+      background-image: -moz-linear-gradient(0deg, #282829 0%, #a7a8a8 100%);
+      background-image: -webkit-linear-gradient(0deg, #282829 0%, #a7a8a8 100%);
+      background-image: -ms-linear-gradient(0deg, #282829 0%, #a7a8a8 100%); }
 
 /* End Personal Profile Area css
 ============================================================================================ */
