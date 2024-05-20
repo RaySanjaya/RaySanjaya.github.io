@@ -1,5 +1,6 @@
 import { CheckCheckIcon, SendIcon } from 'lucide-react';
 import React, { useState } from 'react';
+import { setMessage } from '../actions';
 
 export const ContactMe = () => {
   const [sentMessage, setSendMessage] = useState<boolean>(false)
@@ -18,6 +19,7 @@ export const ContactMe = () => {
   };
 
   const handleSubmit = (e: any) => {
+    setMessage(formData)
     e.preventDefault();
     setFormData({
       name: '',
