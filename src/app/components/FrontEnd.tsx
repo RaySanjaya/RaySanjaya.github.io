@@ -16,9 +16,24 @@ export const FrontEnd = () => {
           </h4>
           <div className="space-y-5">
             <p className="font-content">I am also a Front-End Developer who has a keen interest in developing attractive and responsive user interfaces.</p>
-            <p className="font-content"> With a strong focus on beautiful design and intuitive user experience, I combine creativity with technical expertise to create exceptional web solutions.</p>
+            <p className="font-content"> With a strong focus on beautiful design and intuitive user experience, I combine creativity with technical expertise to create exceptional mobile applications and web solutions.</p>
             <p className="font-content">Here are two Front-End Frameworks that I commonly use in my projects.</p>
             <div className="flex flex-row flex-wrap">
+              <div className="flex flex-row">
+                <img
+                  className="react-icon"
+                  src="flutter-icon.png"
+                  alt="platform_icon"
+                  style={{
+                    maxWidth: '25px',
+                    maxHeight: '25px'
+                  }}
+                />
+                <div className="ps-1 pe-3">
+                  <a href="https://flutter.dev" target="_blank" className="platform-text">Flutter</a>
+                </div>
+              </div>
+
               <div className="flex flex-row">
                 <img
                   className="react-icon"
