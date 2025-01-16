@@ -6,7 +6,7 @@ export const Cart = () => {
     <div className="shadow-box w-full xl:w-96 lg:w-96 md:w-96" data-aos='fade-down'>
       <div className="ps-8 pe-8 pb-8 pt-8 pt-0">
         <div className="flex justify-center">
-          <img src='dp.jpeg' alt="profile" className="w-56 rounded-xl border-transparent" />
+          <img src='dp.jpg' alt="profile" className="w-56 rounded-xl border-transparent" />
         </div>
         <h1 className="text-center text-white text-4xl font-semibold pt-2 pb-2">Ray Sanjaya</h1>
         <div className="flex justify-center mt-2 mb-2">
