@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ExperienceAndEducation } from "./ExperienceAndEducation"
 import { Home } from "./Home"
 import { Menu } from "./Menu"
@@ -8,8 +8,15 @@ import { Profile } from "./homes/Profile"
 import { Theme } from "./Theme"
 import { Language } from "./Language"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export const Container = () => {
   const [indexMenu, setIndexMenu] = useState<number>(0);
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   const menu = () => {
     if (indexMenu == 0) {

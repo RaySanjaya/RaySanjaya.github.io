@@ -1,5 +1,6 @@
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import FadeIn from "react-fade-in"
 
 const IconPlatForm = ({ src, url, text }: { src: string, url: string, text: string }) => {
   return (
@@ -94,12 +95,14 @@ export const WhatIDo = () => {
   const data = lEn;
 
   return (
-    <div className="bg-black/60 backdrop-3xl rounded-2xl">
+    <div className="bg-black/60 backdrop-3xl rounded-2xl" data-aos='fade-up'>
       <div className='p-9 space-y-5'>
         <h2 className="text-white text-3xl">{ data.title }</h2>
         <hr className="border-gray-500" />
-        <BackEnd />
-        <FrontEnd />
+        <FadeIn>
+          <BackEnd />
+          <FrontEnd />
+        </FadeIn>
       </div>
     </div>
   )

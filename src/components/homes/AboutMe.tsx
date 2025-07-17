@@ -1,3 +1,5 @@
+import FadeIn from "react-fade-in";
+
 export const AboutMe = () => {
   const lId = {
     title: 'Tentang Saya',
@@ -16,13 +18,15 @@ export const AboutMe = () => {
   const data = lEn;
 
   return (
-    <div className="bg-black/60 backdrop-3xl rounded-2xl">
+    <div className="bg-black/60 backdrop-3xl rounded-2xl" data-aos='fade-up'>
       <div className='p-9 space-y-5'>
         <h2 className="text-white text-3xl">{ data.title }</h2>
         <hr className="border-gray-500" />
-        <p className="font-content">{ data.part_one }</p>
-        <p className="font-content">{ data.part_two }</p>
-        <p className="font-content">{ data.part_three }</p>
+        <FadeIn>
+          <p className="font-content">{ data.part_one }</p>
+          <p className="font-content">{ data.part_two }</p>
+          <p className="font-content">{ data.part_three }</p>
+        </FadeIn>
       </div>
     </div>
   )

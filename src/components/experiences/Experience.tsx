@@ -1,3 +1,5 @@
+import FadeIn from "react-fade-in";
+
 export const Experience = () => {
   const lId = {
     title: 'Pengalaman',
@@ -34,52 +36,54 @@ export const Experience = () => {
   const data = lEn;
 
   return (
-    <div className="bg-black/60 backdrop-3xl rounded-2xl p-9">
+    <div className="bg-black/60 backdrop-3xl rounded-2xl p-9" data-aos='fade-up'>
       <div className="flex flex-col space-y-3">
         <h2 className="text-white text-3xl">{ data.title }</h2>
-        <hr className="border-gray-500" />
-        <div className="ps-4">
-          <ol className="relative border-s border-gray-500 dark:border-gray-500">
-            <li className="mb-10 ms-6">            
-              <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
-              <h3 className="leading-tight font-bold">CV. Rumah Solusi Digital – Medan, Indonesia</h3>
-              <p className="font-bold text-sm text-gray-400">{ `Full Stack Developer (${data.july} 2021 - ${data.present})` }</p>
-              <ul className="text-sm list-disc ps-4 pt-3">
-                <li>
-                  { data.part_one }
-                </li>
-                <li>
-                  { data.part_two }
-                </li>
-                <li>
-                  { data.part_three }
-                </li>
-                <li>
-                  { data.part_four }
-                </li>
-                <li>
-                  { data.part_five }
-                </li>
-                <li>
-                  { data.part_six }
-                </li>
-              </ul>
-            </li>
-            <li className="mb-10 ms-6">
-              <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
-              <h3 className="leading-tight font-bold">RSU Royal Prima – Medan, Indonesia</h3>
-              <p className="font-bold text-sm text-gray-400">{ `IT Staff (${data.february} 2020 - ${data.june} 2021)` }</p>
-              <ul className="text-sm list-disc ps-4 pt-3">
-                <li>
-                  { data.part_sevent }
-                </li>
-                <li>
-                  { data.part_eight }
-                </li>
-              </ul>
-            </li>
-          </ol>
-        </div>
+        <hr className="border-gray-500 pb-2" />
+        <FadeIn>  
+          <div className="ps-4">
+            <ol className="relative border-s border-gray-500 dark:border-gray-500">
+              <li className="mb-10 ms-6">            
+                <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
+                <h3 className="leading-tight font-bold">CV. Rumah Solusi Digital – Medan, Indonesia</h3>
+                <p className="font-bold text-sm text-gray-400">{ `Full Stack Developer (${data.july} 2021 - ${data.present})` }</p>
+                <ul className="text-sm list-disc ps-4 pt-3">
+                  <li>
+                    { data.part_one }
+                  </li>
+                  <li>
+                    { data.part_two }
+                  </li>
+                  <li>
+                    { data.part_three }
+                  </li>
+                  <li>
+                    { data.part_four }
+                  </li>
+                  <li>
+                    { data.part_five }
+                  </li>
+                  <li>
+                    { data.part_six }
+                  </li>
+                </ul>
+              </li>
+              <li className="mb-10 ms-6">
+                <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
+                <h3 className="leading-tight font-bold">RSU Royal Prima – Medan, Indonesia</h3>
+                <p className="font-bold text-sm text-gray-400">{ `IT Staff (${data.february} 2020 - ${data.june} 2021)` }</p>
+                <ul className="text-sm list-disc ps-4 pt-3">
+                  <li>
+                    { data.part_sevent }
+                  </li>
+                  <li>
+                    { data.part_eight }
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </FadeIn>
       </div>
     </div>
   )
