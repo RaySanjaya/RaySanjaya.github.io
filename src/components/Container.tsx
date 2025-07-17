@@ -28,12 +28,12 @@ export const Container = () => {
 
   return (
     <div className="w-full flex flex-row items-center justify-center p-10">
-      <div className="flex flex-row space-x-5 items-start w-7xl">
-        <div className="w-96">
+      <div className="flex xl:flex-row lg:flex-row flex-col xl:space-x-5 lg:space-x-5 space-y-5 items-start w-7xl">
+        <div className="w-full">
           <Profile />
         </div>
         { menu() }
-        <div className="flex flex-col space-y-3">
+        <div className="flex-col space-y-3 sm:hidden xl:block lg:block">
           <Menu onSelect={ setIndexMenu } index={indexMenu} />
           <Theme onSelect={ (value) => console.log(value) } index={0} />
           <Language onSelect={ (value) => console.log(value) } index={0} />

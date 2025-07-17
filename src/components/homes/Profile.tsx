@@ -22,9 +22,9 @@ export const Profile = () => {
   const data = lEn;
 
   return (
-    <div className="bg-black/60 backdrop-3xl p-10 w-96 rounded-2xl" data-aos='fade-up'>
+    <div className="bg-black/60 backdrop-3xl p-10 rounded-2xl" data-aos='fade-up'>
       <div className="flex flex-col justify-center items-center">
-        <FadeIn>
+        <FadeIn className="w-full">
           <div className="flex flex-col justify-center items-center space-y-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src='images/dp.jpg' alt="profile" className="w-56 rounded-xl border-transparent" />
@@ -49,12 +49,12 @@ export const Profile = () => {
             </a>
           </div>
 
-          <div className='flex flex-col space-y-3 mt-3 p-4 rounded-lg icon-boxes w-full bg-black/30'>
+          <div className='flex flex-col space-y-3 mt-3 p-4 rounded-lg bg-black/30'>
             <div className='flex flex-row space-x-3'>
               <div className='flex items-center justify-center w-10'>
                 <FontAwesomeIcon icon={faMobileScreenButton} size='lg' />
               </div>
-              <div>
+              <div className="w-full">
                 <small className='text-gray-400'>{ data.phone }</small>
                 <br />
                 <label className="font-content">+62 813 XXXX XX66</label>
@@ -65,7 +65,7 @@ export const Profile = () => {
               <div className='flex items-center w-10 justify-center'>
                 <FontAwesomeIcon icon={faEnvelope} size='lg' />
               </div>
-              <div className=''>
+              <div className="w-full">
                 <small className='text-gray-400'>Email</small>
                 <br />
                 <label className="font-content">ray.snjya@gmail.com</label>
@@ -76,7 +76,7 @@ export const Profile = () => {
               <div className='flex items-center w-10 justify-center'>
                 <FontAwesomeIcon icon={faLocationDot} size='lg' />
               </div>
-              <div className=''>
+              <div className="w-full">
                 <small className='text-gray-400'>{ data.location }</small>
                 <br />
                 <label className="font-content">Medan, Indonesia</label>
@@ -87,7 +87,7 @@ export const Profile = () => {
               <div className='flex items-center w-10 justify-center'>
                 <FontAwesomeIcon icon={faGift} size='lg' />
               </div>
-              <div className=''>
+              <div className="w-full">
                 <small className='text-gray-400'>{ data.birthday }</small>
                 <br />
                 <label className="font-content">{ data.birthday_detail }</label>

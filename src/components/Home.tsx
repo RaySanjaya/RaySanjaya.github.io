@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col space-y-5">
       <AboutMe />
-      <div className="flex flex-row space-x-5">
+      <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col xl:space-x-5 lg:space-x-5 md:space-x-5 space-y-5">
         <div className="w-full">
           <WhatIDo />
         </div>
