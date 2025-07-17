@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FontAwesomeConfig } from "@/ui_kits/FontAwesomeConfig";
+import Particles from "@/ui_kits/particles";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <FontAwesomeConfig />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        />
         {children}
       </body>
     </html>
