@@ -31,7 +31,7 @@ export const Container = () => {
     <div className="w-full flex flex-row items-center justify-center p-10">
       <div className="flex xl:flex-row lg:flex-row flex-col xl:space-x-5 lg:space-x-5 space-y-5 items-start w-7xl">
         <div className="block xl:hidden lg:hidden">
-          <DrawerUi />
+          <DrawerUi onSelect={setIndexMenu} index={indexMenu} />
         </div>
         <div className="w-full xl:w-96 lg:w-96">
           <Profile />

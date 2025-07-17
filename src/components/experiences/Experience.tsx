@@ -47,7 +47,7 @@ export const Experience = () => {
                 <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
                 <h3 className="leading-tight font-bold">CV. Rumah Solusi Digital – Medan, Indonesia</h3>
                 <p className="font-bold text-sm text-gray-400">{ `Full Stack Developer (${data.july} 2021 - ${data.present})` }</p>
-                <ul className="text-sm list-disc ps-4 pt-3">
+                <ul className="text-sm list-disc ps-4 pt-3 space-y-2">
                   <li>
                     { data.part_one }
                   </li>
@@ -72,7 +72,7 @@ export const Experience = () => {
                 <span className="absolute flex items-center justify-center w-4 h-4 bg-gray-500 rounded-full -start-2 ring-2 ring-gray-500 dark:ring-gray-500 dark:bg-grey-500" />
                 <h3 className="leading-tight font-bold">RSU Royal Prima – Medan, Indonesia</h3>
                 <p className="font-bold text-sm text-gray-400">{ `IT Staff (${data.february} 2020 - ${data.june} 2021)` }</p>
-                <ul className="text-sm list-disc ps-4 pt-3">
+                <ul className="text-sm list-disc ps-4 pt-3 space-y-2">
                   <li>
                     { data.part_sevent }
                   </li>

@@ -40,8 +40,8 @@ const BackEnd = () => {
         <span className="font-bold">
           <u>Back-end Developer</u>
         </span>
-        <div className="ps-4">
-          <ul className="list-disc">
+        <div className="ps-4 text-sm">
+          <ul className="list-disc space-y-2">
             <li>{ data.part_one }</li>
             <li>{ data.part_two }</li>
           </ul>
@@ -72,7 +72,7 @@ const FrontEnd = () => {
         <span className="font-bold">
           <u>Front-end Developer</u>
         </span>
-        <p>{ data.part_one }</p>
+        <p className="text-sm">{ data.part_one }</p>
         <div className="flex flex-wrap space-x-3 space-y-3 items-center justify-start">
           <IconPlatForm src={"images/flutter-icon.png"} url={"https://flutter.dev"} text="Flutter" />
           <IconPlatForm src={"images/nextjs-icon.png"} url={"https://nextjs.org"} text="Next JS" />
@@ -99,7 +99,7 @@ export const WhatIDo = () => {
       <div className='p-9 space-y-5'>
         <h2 className="text-white text-3xl">{ data.title }</h2>
         <hr className="border-gray-500" />
-        <FadeIn>
+        <FadeIn className="space-y-5">
           <BackEnd />
           <FrontEnd />
         </FadeIn>

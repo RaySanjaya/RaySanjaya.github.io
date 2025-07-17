@@ -9,7 +9,12 @@ import { MenuDrawer } from './menus/MenuDrawer'
 import { ThemeDrawer } from './menus/ThemeDrawer'
 import { LanguageDrawer } from './menus/LanguageDrawer'
 
-export const DrawerUi = () => {
+type DrawerUiProps = {
+  index: number;
+  onSelect: (value: number) => void;
+}
+
+export const DrawerUi = ({ index, onSelect }: DrawerUiProps) => {
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState)
@@ -25,7 +30,13 @@ export const DrawerUi = () => {
         className='bg-neutral-900/95! rounded-4xl!'
       >
         <div className='pt-10 ps-10 pe-5 space-y-4'>
-          <MenuDrawer />
+          <MenuDrawer
+            onSelect={(value: number) => {
+              onSelect(value);
+              toggleDrawer();
+            }}
+            index={index}
+          />
           <ThemeDrawer />
           <LanguageDrawer />
         </div>
