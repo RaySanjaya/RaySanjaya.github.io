@@ -41,6 +41,9 @@ importers:
       react-fade-in:
         specifier: ^2.0.1
         version: 2.0.1(react@19.1.0)
+      react-modern-drawer:
+        specifier: ^1.4.0
+        version: 1.4.0(react@19.1.0)
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -1608,6 +1611,11 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-modern-drawer@1.4.0:
+    resolution: {integrity: sha512-5OkcUstqUdd/CNW9+BvLkzm36R2G54RFXWF2mWCH13cUsz5SNo9aB9KzPRbJp2LEVfRL/u+MgikOWRe7/6wKEQ==}
+    peerDependencies:
+      react: '>16.0.0'
 
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
@@ -3499,6 +3507,10 @@ snapshots:
       react: 19.1.0
 
   react-is@16.13.1: {}
+
+  react-modern-drawer@1.4.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
 
   react@19.1.0: {}
 
