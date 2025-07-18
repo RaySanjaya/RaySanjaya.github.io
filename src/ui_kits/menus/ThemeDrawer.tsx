@@ -1,3 +1,4 @@
+import { useLanguage } from "@/providers/LanguageProvider"
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -14,7 +15,9 @@ export const ThemeDrawer = () => {
     light: 'Light'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <>

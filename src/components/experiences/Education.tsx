@@ -1,3 +1,4 @@
+import { useLanguage } from "@/providers/LanguageProvider";
 import FadeIn from "react-fade-in";
 
 export const Education = () => {
@@ -9,12 +10,14 @@ export const Education = () => {
     title: 'Education'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <div className="bg-black/60 backdrop-3xl rounded-2xl p-9" data-aos='fade-up'>
       <div className="flex flex-col space-y-3">
-        <h2 className="text-white text-3xl">{ data.title }</h2>
+        <h2 className="text-white text-2xl">{ data.title }</h2>
         <hr className="border-gray-500 pb-2" />
         <FadeIn>
           <div className="ps-4">

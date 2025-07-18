@@ -1,4 +1,4 @@
-import { faGraduationCap, faHome } from "@fortawesome/free-solid-svg-icons"
+import { faHome, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 type MenuProps = {
@@ -26,7 +26,7 @@ export const Menu = ({ onSelect, index }: MenuProps) => {
             onSelect(1)
           }}
         >
-          <FontAwesomeIcon icon={faGraduationCap} />
+          <FontAwesomeIcon icon={faTimeline} />
         </div>
       </div>
     </div>

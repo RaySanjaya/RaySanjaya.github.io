@@ -7,7 +7,7 @@ export const Skill = () => {
   return (
     <div className="bg-black/60 backdrop-3xl rounded-2xl" data-aos='fade-up'>
       <div className='p-9 space-y-5'>
-        <h2 className="text-white text-3xl">Skill</h2>
+        <h2 className="text-white text-2xl">Skill</h2>
         <hr className="border-gray-500 bg-gray-5" />
         <FadeIn>
           <ul className="list-disc ps-4 space-y-3">

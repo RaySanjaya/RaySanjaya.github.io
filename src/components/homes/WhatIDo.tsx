@@ -1,3 +1,4 @@
+import { useLanguage } from "@/providers/LanguageProvider"
 import { faCode, faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import FadeIn from "react-fade-in"
@@ -31,7 +32,9 @@ const BackEnd = () => {
     part_two: 'Designing and managing relational database structures, including query optimization and data normalization.'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <div className="flex flex-row space-x-5">
@@ -63,7 +66,9 @@ const FrontEnd = () => {
     part_one: 'Building user interfaces (UI) for web applications using Next.js and for mobile applications using Flutter, with a focus on performance and user experience.'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <div className="flex flex-row space-x-5">
@@ -85,19 +90,21 @@ const FrontEnd = () => {
 
 export const WhatIDo = () => {
   const lId = {
-    title: 'Yang saya lakukan'
+    title: 'Apa yang bisa saya lakukan?'
   }
 
   const lEn = {
     title: 'What I Do?'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <div className="bg-black/60 backdrop-3xl rounded-2xl" data-aos='fade-up'>
       <div className='p-9 space-y-5'>
-        <h2 className="text-white text-3xl">{ data.title }</h2>
+        <h2 className="text-white text-xl">{ data.title }</h2>
         <hr className="border-gray-500" />
         <FadeIn className="space-y-5">
           <BackEnd />

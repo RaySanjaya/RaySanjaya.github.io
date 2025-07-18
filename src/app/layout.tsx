@@ -3,6 +3,7 @@ import { Cascadia_Code, Fira_Code, Geist, Geist_Mono, Geologica, Inter, JetBrain
 import "./globals.css";
 import { FontAwesomeConfig } from "@/ui_kits/FontAwesomeConfig";
 import Particles from "@/ui_kits/particles";
+import { LanguageProvider } from "@/providers/LanguageProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,7 +55,9 @@ export default function RootLayout({
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={100}
         />
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

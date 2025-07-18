@@ -1,4 +1,5 @@
-import { faGraduationCap, faHome } from "@fortawesome/free-solid-svg-icons"
+import { useLanguage } from "@/providers/LanguageProvider";
+import { faHome, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 type MenuDrawerProps = {
@@ -8,14 +9,16 @@ type MenuDrawerProps = {
 
 export const MenuDrawer = ({ index, onSelect }: MenuDrawerProps) => {
   const lId = {
-    experience: "Pengalaman"
+    experience: "Timeline"
   }
 
   const lEn = {
-    experience: "Experience"
+    experience: "Timeline"
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <>
@@ -40,7 +43,7 @@ export const MenuDrawer = ({ index, onSelect }: MenuDrawerProps) => {
             onSelect(1);
           }}
         >
-          <FontAwesomeIcon icon={faGraduationCap} size="sm" className="pt-1"/>
+          <FontAwesomeIcon icon={faTimeline} size="sm" className="pt-1"/>
           <span>{ data.experience }</span>
         </div>
       </div>

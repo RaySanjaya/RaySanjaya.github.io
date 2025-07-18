@@ -1,3 +1,4 @@
+import { useLanguage } from "@/providers/LanguageProvider";
 import { faGithub, faInstagram, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope, faGift, faLocationDot, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +20,9 @@ export const Profile = () => {
     birthday_detail: 'March 06, 1998'
   }
 
-  const data = lEn;
+  const { localeId } = useLanguage();
+  let data = lEn;
+  if (localeId == 'id') data = lId;
 
   return (
     <div className="bg-black/60 backdrop-3xl p-10 rounded-2xl" data-aos='fade-up'>

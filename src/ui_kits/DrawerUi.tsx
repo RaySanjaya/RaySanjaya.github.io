@@ -37,8 +37,8 @@ export const DrawerUi = ({ index, onSelect }: DrawerUiProps) => {
             }}
             index={index}
           />
+          <LanguageDrawer onSelect={toggleDrawer} />
           <ThemeDrawer />
-          <LanguageDrawer />
         </div>
       </Drawer>
     </>
