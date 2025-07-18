@@ -11,6 +11,7 @@ import { Language } from "./Language"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { DrawerUi } from "@/ui_kits/DrawerUi"
+import { ProjectList } from "./ProjectList"
 
 export const Container = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -25,6 +26,8 @@ export const Container = () => {
       return <Home />;
     } else if (indexMenu == 1) {
       return <ExperienceAndEducation />
+    } else if (indexMenu == 2) {
+      return <ProjectList />
     }
   }
 
@@ -48,7 +51,7 @@ export const Container = () => {
         <div className="w-full xl:w-96 lg:w-96">
           <Profile />
         </div>
-        <div ref={ sectionRef } >
+        <div ref={ sectionRef } className="w-full" >
           { section() }
         </div>
         <div className="flex-col space-y-3 hidden xl:block lg:block">

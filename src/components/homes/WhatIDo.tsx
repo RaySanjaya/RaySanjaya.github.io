@@ -3,7 +3,7 @@ import { faCode, faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import FadeIn from "react-fade-in"
 
-const IconPlatForm = ({ src, url, text }: { src: string, url: string, text: string }) => {
+export const IconPlatForm = ({ src, url, text }: { src: string, url: string, text: string }) => {
   return (
     <div className="flex flex-row items-center justify-center rounded-4xl bg-black/30 ps-3 pe-3 pt-2 pb-2 space-x-2">
       {/* eslint-disable-next-line @next/next/no-img-element */}

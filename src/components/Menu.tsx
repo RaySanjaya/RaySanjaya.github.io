@@ -1,4 +1,4 @@
-import { faHome, faTimeline } from "@fortawesome/free-solid-svg-icons"
+import { faCubes, faHome, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 type MenuProps = {
@@ -27,6 +27,15 @@ export const Menu = ({ onSelect, index }: MenuProps) => {
           }}
         >
           <FontAwesomeIcon icon={faTimeline} />
+        </div>
+        <div
+          className={ `cursor-pointer p-2 rounded-4xl w-10 h-10 text-center ${index == 2 ? 'bg-gray-600/50' : 'hover:bg-gray-600/50'}` }
+          onClick={ () => {
+            if (index == 2) return;
+            onSelect(2)
+          }}
+        >
+          <FontAwesomeIcon icon={faCubes} />
         </div>
       </div>
     </div>
