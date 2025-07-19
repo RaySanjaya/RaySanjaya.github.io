@@ -37,27 +37,29 @@ export const Container = () => {
 
 
   return (
-    <div className="w-full flex flex-row items-center justify-center xl:p-10 lg:p-10 ps-10 pe-10 pb-10 pt-4">
-      <div className="flex xl:flex-row lg:flex-row flex-col xl:space-x-5 lg:space-x-5 space-y-5 items-start w-7xl">
-        <div className="block xl:hidden lg:hidden">
-          <DrawerUi
-            onSelect={(value: number) => {
-              setIndexMenu(value);
-              scrollToSection();
-            }}
-            index={indexMenu}
-          />
-        </div>
-        <div className="w-full xl:w-96 lg:w-96">
-          <Profile />
-        </div>
-        <div ref={ sectionRef } className="w-full" >
-          { section() }
-        </div>
-        <div className="flex-col space-y-3 hidden xl:block lg:block">
-          <Menu onSelect={ setIndexMenu } index={indexMenu} />
-          <Language />
-          <Theme onSelect={ (value) => console.log(value) } index={0} />
+    <div className="flex flex-col">
+      <div className="block xl:hidden lg:hidden w-full">
+        <DrawerUi
+          onSelect={(value: number) => {
+            setIndexMenu(value);
+            scrollToSection();
+          }}
+          index={indexMenu}
+        />
+      </div>
+      <div className="w-full flex flex-row items-center justify-center xl:p-10 lg:p-10 ps-10 pe-10 pb-10 pt-20">
+        <div className="flex xl:flex-row lg:flex-row flex-col xl:space-x-5 lg:space-x-5 space-y-5 items-start w-7xl">
+          <div className="w-full xl:w-96 lg:w-96">
+            <Profile />
+          </div>
+          <div ref={ sectionRef } className="w-full" >
+            { section() }
+          </div>
+          <div className="flex-col space-y-3 hidden xl:block lg:block">
+            <Menu onSelect={ setIndexMenu } index={indexMenu} />
+            <Language />
+            <Theme onSelect={ (value) => console.log(value) } index={0} />
+          </div>
         </div>
       </div>
     </div>

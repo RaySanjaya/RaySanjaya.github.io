@@ -26,7 +26,7 @@ export const LanguageDrawer = ({ onSelect }: LanguageProps) => {
       <div className="flex flex-col">
         <span className="text-sm text-neutral-500">{ data.language }</span>
         <div
-          className={`cursor-pointer p-2 rounded-lg flex flex-row space-x-3 ${ localeId == 'en' ? 'bg-neutral-700' : 'hover:bg-neutral-700/20' }`}
+          className={`cursor-pointer p-2 rounded-lg flex flex-row space-x-3 ${ localeId == 'en' ? 'bg-neutral-700/50' : 'hover:bg-neutral-700/20' }`}
           onClick={() => {
             if (localeId == 'en') return;
             setLocale('en');
@@ -37,7 +37,7 @@ export const LanguageDrawer = ({ onSelect }: LanguageProps) => {
           <span>{ data.english }</span>
         </div>
         <div
-          className={`cursor-pointer p-2 rounded-lg flex flex-row space-x-3 ${ localeId == 'id' ? 'bg-neutral-700' : 'hover:bg-neutral-700/20' }`}
+          className={`cursor-pointer p-2 rounded-lg flex flex-row space-x-3 ${ localeId == 'id' ? 'bg-neutral-700/50' : 'hover:bg-neutral-700/20' }`}
           onClick={() => {
             if (localeId == 'id') return;
             setLocale('id');

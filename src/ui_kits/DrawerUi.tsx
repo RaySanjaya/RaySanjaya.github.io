@@ -22,14 +22,17 @@ export const DrawerUi = ({ index, onSelect }: DrawerUiProps) => {
 
   return (
     <>
-      <FontAwesomeIcon icon={faBars} onClick={toggleDrawer} className='cursor-pointer text-black' size='xl' />
+      <div className='bg-black/30 z-10 pt-4 pb-4 ps-5 pe-5 w-full fixed backdrop-blur-2xl flex flex-row space-x-5'>
+        <FontAwesomeIcon icon={faBars} onClick={toggleDrawer} className='cursor-pointer text-neutral-400' size='xl' />
+        <span>Ray.Dev</span>
+      </div>
       <Drawer
         open={isOpen}
         onClose={toggleDrawer}
         direction='left'
-        className='bg-neutral-900/95! rounded-4xl!'
+        className='bg-neutral-900/70! border-1 border-neutral-700 rounded-r-4xl! backdrop-blur-2xl'
       >
-        <div className='pt-10 ps-10 pe-5 space-y-4'>
+        <div className='p-5 space-y-4'>
           <MenuDrawer
             onSelect={(value: number) => {
               onSelect(value);

@@ -23,11 +23,11 @@ export const ThemeDrawer = () => {
     <>
       <div className="flex flex-col">
         <span className="text-sm text-neutral-500">{ data.theme }</span>
-        <div className="cursor-pointer p-2 rounded-lg flex flex-row space-x-3 bg-neutral-700">
+        <div className="cursor-pointer p-2 rounded-lg flex flex-row space-x-3 bg-neutral-700/50">
           <FontAwesomeIcon icon={faMoon} size="sm" className="pt-1"/>
           <span>{ data.dark }</span>
         </div>
-        <div className="cursor-pointer p-2 rounded-lg flex flex-row space-x-3 hover:bg-neutral-700">
+        <div className="cursor-pointer p-2 rounded-lg flex flex-row space-x-3 hover:bg-neutral-700/50">
           <FontAwesomeIcon icon={faSun} size="sm" className="pt-1"/>
           <span>{ data.light }</span>
         </div>

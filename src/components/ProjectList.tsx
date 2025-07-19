@@ -1,6 +1,8 @@
 import { useLanguage } from "@/providers/LanguageProvider";
 import FadeIn from "react-fade-in"
 import { SalessoupPos } from "./projects/SalessoupPos";
+import { SonicsGolfRange } from "./projects/SonicsGolfRange";
+import { RoyalCare } from "./projects/RoyalCare";
 
 export const ProjectList = () => {
 
@@ -24,9 +26,8 @@ export const ProjectList = () => {
         <FadeIn>
           <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5">
             <SalessoupPos />
-            <SalessoupPos />
-            <SalessoupPos />
-            <SalessoupPos />
+            <SonicsGolfRange />
+            <RoyalCare />
           </div>
         </FadeIn>
       </div>

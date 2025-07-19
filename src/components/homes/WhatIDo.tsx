@@ -49,7 +49,7 @@ const BackEnd = () => {
             <li>{ data.part_two }</li>
           </ul>
         </div>
-        <div className="flex flex-wrap space-x-3 items-center justify-start">
+        <div className="flex flex-wrap gap-3 items-center justify-start">
           <IconPlatForm src={"images/rails-icon.png"} url={"https://rubyonrails.org"} text="Ruby On Rails" />
         </div>
       </div>
@@ -78,7 +78,7 @@ const FrontEnd = () => {
           <u>Front-end Developer</u>
         </span>
         <p className="text-sm">{ data.part_one }</p>
-        <div className="flex flex-wrap space-x-3 space-y-3 items-center justify-start">
+        <div className="flex flex-wrap gap-3 items-center justify-start">
           <IconPlatForm src={"images/flutter-icon.png"} url={"https://flutter.dev"} text="Flutter" />
           <IconPlatForm src={"images/nextjs-icon.png"} url={"https://nextjs.org"} text="Next JS" />
           <IconPlatForm src={"images/react-icon.png"} url={"https://react.dev"} text="React JS" />
