@@ -1,5 +1,4 @@
 import { useLanguage } from "@/providers/LanguageProvider";
-import FadeIn from "react-fade-in";
 
 export const Experience = () => {
   const lId = {
@@ -43,7 +42,7 @@ export const Experience = () => {
       <div className="flex flex-col space-y-3">
         <h2 className="text-white text-2xl">{ data.title }</h2>
         <hr className="border-gray-500 pb-2" />
-        <FadeIn>  
+        <div>  
           <div className="ps-4">
             <ol className="relative border-s border-gray-500 dark:border-gray-500">
               <li className="mb-10 ms-6">            
@@ -86,7 +85,7 @@ export const Experience = () => {
               </li>
             </ol>
           </div>
-        </FadeIn>
+        </div>
       </div>
     </div>
   )

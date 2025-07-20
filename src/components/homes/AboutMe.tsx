@@ -1,5 +1,4 @@
 import { useLanguage } from "@/providers/LanguageProvider";
-import FadeIn from "react-fade-in";
 
 export const AboutMe = () => {
   const lId = {
@@ -25,11 +24,9 @@ export const AboutMe = () => {
       <div className='p-9 space-y-5'>
         <h2 className="text-white text-2xl">{ data.title }</h2>
         <hr className="border-gray-500" />
-        <FadeIn className="space-y-5 text-sm">
-          <p className="font-content">{ data.part_one }</p>
-          <p className="font-content">{ data.part_two }</p>
-          <p className="font-content">{ data.part_three }</p>
-        </FadeIn>
+        <p className="font-content">{ data.part_one }</p>
+        <p className="font-content">{ data.part_two }</p>
+        <p className="font-content">{ data.part_three }</p>
       </div>
     </div>
   )

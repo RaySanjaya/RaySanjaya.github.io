@@ -1,7 +1,6 @@
 'use client'
 
 import ProgressBar from "@ramonak/react-progress-bar"
-import FadeIn from "react-fade-in"
 
 export const Skill = () => {
   return (
@@ -9,7 +8,7 @@ export const Skill = () => {
       <div className='p-9 space-y-5'>
         <h2 className="text-white text-2xl">Skill</h2>
         <hr className="border-gray-500 bg-gray-5" />
-        <FadeIn>
+        <div>
           <ul className="list-disc ps-4 space-y-3">
             <li>
               Ruby On Rails
@@ -32,7 +31,7 @@ export const Skill = () => {
               <ProgressBar completed="90" customLabel="90%" height="16px" bgColor="#6a7282" baseBgColor="#ffffff" labelSize='14px' />
             </li>
           </ul>
-        </FadeIn>
+        </div>
       </div>
     </div>
   )

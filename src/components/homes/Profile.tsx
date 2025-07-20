@@ -3,7 +3,6 @@ import { faGithub, faInstagram, faSquareFacebook } from "@fortawesome/free-brand
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope, faGift, faLocationDot, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FadeIn from "react-fade-in";
 
 export const Profile = () => {
   const lId = {
@@ -27,7 +26,7 @@ export const Profile = () => {
   return (
     <div className="bg-black/60 backdrop-3xl p-10 rounded-2xl" data-aos='fade-up'>
       <div className="flex flex-col justify-center items-center">
-        <FadeIn className="w-full">
+        <div className="w-full">
           <div className="flex flex-col justify-center items-center space-y-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src='images/dp.jpg' alt="profile" className="w-56 rounded-xl border-transparent" />
@@ -97,7 +96,7 @@ export const Profile = () => {
               </div>
             </div>
           </div>
-        </FadeIn>
+        </div>
       </div>
     </div>
   )
