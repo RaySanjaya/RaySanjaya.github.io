@@ -24,7 +24,7 @@ export const DrawerUi = ({ index, onSelect }: DrawerUiProps) => {
     <>
       <div className='bg-black/30 z-10 pt-4 pb-4 ps-5 pe-5 w-full fixed backdrop-blur-2xl flex flex-row space-x-5'>
         <FontAwesomeIcon icon={faBars} onClick={toggleDrawer} className='cursor-pointer text-neutral-400' size='xl' />
-        <span>Ray.Dev</span>
+        <span>{ '<Ray.Dev/>' }</span>
       </div>
       <Drawer
         open={isOpen}
