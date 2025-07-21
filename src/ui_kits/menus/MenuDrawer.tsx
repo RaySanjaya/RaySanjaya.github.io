@@ -1,5 +1,5 @@
 import { useLanguage } from "@/providers/LanguageProvider";
-import { faCubes, faHome, faTimeline } from "@fortawesome/free-solid-svg-icons"
+import { faCubes, faHome, faIdCard, faTimeline } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 type MenuDrawerProps = {
@@ -57,6 +57,13 @@ export const MenuDrawer = ({ index, onSelect }: MenuDrawerProps) => {
           <FontAwesomeIcon icon={faCubes} size="sm" className="pt-1"/>
           <span>Project</span>
         </div>
+        <a
+          href="/id_card"
+          className={`cursor-pointer p-2 rounded-lg flex flex-row space-x-3`}
+        >
+          <FontAwesomeIcon icon={faIdCard} size="sm" className="pt-1"/>
+          <span>Id Card</span>
+        </a>
       </div>
     </>
   )

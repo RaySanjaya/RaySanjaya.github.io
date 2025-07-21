@@ -1,6 +1,4 @@
 import { AboutMe } from "./homes/AboutMe"
-import { Menu } from "./Menu"
-import { Profile } from "./homes/Profile"
 import { Skill } from "./homes/Skill"
 import { WhatIDo } from "./homes/WhatIDo"
 
