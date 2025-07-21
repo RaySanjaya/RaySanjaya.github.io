@@ -50,6 +50,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${cascadiaCode.className} antialiased`}
+        style={{ backgroundColor: "#222222", color: "#ededed" }}
       >
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
